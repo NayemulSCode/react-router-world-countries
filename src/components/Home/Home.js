@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import CountriesDetails from '../CountriesDetails/CountriesDetails';
 
 const Home = () => {
     const [countries, setCountries] = useState([]);
@@ -9,13 +10,16 @@ const Home = () => {
         .then(res => res.json())
         .then(data => {
             setCountries(data);
-            console.log(data);
+            //console.log(data);
         })
     },[]);
     return (
         <div>
+            <h5>total countries : {countries.length}</h5>
             {
-                countries.map(country => <p>{country.name}</p>)
+                countries.map(country => 
+                    <CountriesDetails country={country} />
+                )
             }
         </div>
     );
