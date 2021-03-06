@@ -14,14 +14,16 @@ const Home = () => {
         })
     },[]);
     return (
-        <div>
+        <>
             <h5>total countries : {countries.length}</h5>
+            <div>
             {
                 countries.map(country => 
                     <CountriesDetails key={country.alpha3Code} country={country} />
                 )
             }
-        </div>
+            </div>
+        </>
     );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 const CountriesDetails = (props) => {
-    const {name,capital,callingCodes} = props.country;
+    const {name,capital} = props.country;
     //console.log(props);
     const countryStyle = {
         border: '1px solid black',
@@ -13,7 +13,7 @@ const CountriesDetails = (props) => {
         <div style={countryStyle}>
             <h5>{name}</h5>
             <p><small>{capital}</small></p>
-            <Link to={`/country/${callingCodes}`}>Details</Link>
+            <Link to={`/country/${name}`}>Details</Link>
         </div>
     );
 };

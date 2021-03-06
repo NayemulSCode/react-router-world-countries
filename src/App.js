@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route path="/country/:callingCodes">
+      <Route path="/country/:name">
             <Country />
         </Route>
       <Route exact path="/home">
