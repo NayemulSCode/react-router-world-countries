@@ -8,10 +8,12 @@ import {
 import Home from './components/Home/Home';
 import Error404 from './Error/Error404';
 import Country from './components/Country/Country';
+import Navigation from './components/NavbarLink/Navigation';
 
 function App() {
   return (
     <Router>
+      <Navigation />
       <Switch>
       <Route path="/country/:name">
             <Country />

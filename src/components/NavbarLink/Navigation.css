@@ -1,0 +1,18 @@
+
+.menubar{
+    background:linear-gradient(0deg,#e6d368,#cbdd7c,#a4ac32);
+    padding: 1rem 0;
+    transition: .4s;
+}
+nav{
+    margin-left: 20%;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+nav a:hover{
+    background: linear-gradient(0deg,#11817b,#2fb4a0 ,#025955);
+}
